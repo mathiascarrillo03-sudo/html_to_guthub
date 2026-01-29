@@ -1,0 +1,112 @@
+
+		:root {
+			--bg: #000700;
+			--card: #fff;
+			--muted: #6b7280;
+		}
+
+		* {
+			box-sizing: border-box;
+		}
+
+		body {
+			font-family: "Segoe UI", Arial, sans-serif;
+			background: var(--bg);
+			margin: 0;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			padding: 20px;
+		}
+
+		.entrevista {
+			width: min(800px, 96vw);
+			background: var(--card);
+			border-radius: 10px;
+			box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+			overflow: hidden;
+			display: flex;
+			flex-direction: column;
+		}
+
+		.encabezado {
+			padding: 14px 16px;
+			background: #0b7a63;
+			color: white;
+			display: flex;
+			align-items: center;
+			gap: 12px;
+		}
+
+		.titulo {
+			font-size: 16px;
+			margin: 0;
+		}
+
+		.encabezado .meta {
+			margin-left: auto;
+			text-align: right;
+			font-size: 13px;
+		}
+
+		.contenido {
+			padding: 18px;
+			display: flex;
+			flex-direction: column;
+			gap: 14px;
+			min-height: 320px;
+			max-height: 68vh;
+			overflow: auto;
+		}
+
+		.bloque {
+			padding: 12px;
+			border-radius: 8px;
+			background: #ebf7c1;
+			border: 1px solid #04c524;
+		}
+
+		.pregunta {
+			margin-bottom: 8px;
+			color: #064e3b;
+		}
+
+		.respuesta {
+			color: #0b2f1f;
+		}
+
+		.rol {
+			font-weight: 700;
+			margin-right: 6px;
+			color: #075E54;
+		}
+
+		.imagen-final {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			padding: 18px;
+		}
+
+		.imagen-final img {
+			max-width: 260px;
+			border-radius: 8px;
+		}
+
+		.imagen-final figcaption {
+			margin-top: 8px;
+			color: #075E54;
+			font-weight: 600;
+		}
+
+		@media (max-width: 520px) {
+			.contenido {
+				padding: 12px;
+			}
+
+			.encabezado {
+				font-size: 15px;
+			}
+		}
+  }
+}
